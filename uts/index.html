@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Kue Kesukaan</title>
+    <style>
+        /* Reset dasar */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* Gaya Umum */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+        
+        /* Container */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* Header */
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #ffb3b3;
+        }
+        
+        header h1 {
+            font-size: 2.5em;
+            color: #fff;
+        }
+        
+        header p {
+            font-size: 1.2em;
+            color: #fff;
+        }
+        
+        /* Section Daftar Kue */
+        .cake-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px 0;
+        }
+        
+        /* Kartu Kue */
+        .cake-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+        
+        .cake-card:hover {
+            transform: scale(1.05);
+        }
+        
+        .cake-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .cake-card-content {
+            padding: 15px;
+        }
+        
+        .cake-card-content h3 {
+            font-size: 1.5em;
+            color: #ff6666;
+            margin-bottom: 10px;
+        }
+        
+        .cake-card-content p {
+            font-size: 1em;
+            color: #666;
+        }
+        
+        .cake-card-content button {
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #ff6666;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .cake-card-content button:hover {
+            background-color: #e65555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Daftar Kue Kesukaan</h1>
+        <p>Rekomendasi kue favorit semua orang</p>
+    </header>
+
+    <div class="container">
+        <section class="cake-list">
+            <!-- Kartu Kue 1 -->
+            <div class="cake-card">
+                <img src="kue coklat.jpg" alt="Kue Coklat">
+                <div class="cake-card-content">
+                    <h3>Kue Coklat</h3>
+                    <p>Lezatnya kue coklat dengan lapisan coklat lembut yang meleleh di mulut.</p>
+                    <button>Detail</button>
+                </div>
+            </div>
+
+            <!-- Kartu Kue 2 -->
+            <div class="cake-card">
+                <img src="kue keju .jpg" alt="Kue Keju">
+                <div class="cake-card-content">
+                    <h3>Kue Keju</h3>
+                    <p>Kue keju yang creamy dan lembut, cocok untuk para pecinta keju!</p>
+                    <button>Detail</button>
+                </div>
+            </div>
+
+            <!-- Kartu Kue 3 -->
+            <div class="cake-card">
+                <img src="red velvet.jpg" alt="Kue Red Velvet">
+                <div class="cake-card-content">
+                    <h3>Kue Red Velvet</h3>
+                    <p>Kue red velvet dengan krim keju yang lezat dan lembut di setiap gigitan.</p>
+                    <button>Detail</button>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
